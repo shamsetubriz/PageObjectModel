@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name=" FreeCRM App Test Automation suite ">
+
+	<listeners>
+		<listener
+			class-name="com.crm.qa.extentReportListener.ExtentReportListener">
+		</listener>
+	</listeners>
+	
+	<test name="FreeCRM App TEST">
+
+		<!-- <parameter name="browser" value="chrome" /> <parameter name="url" 
+			value="https://www.freecrm.com/" /> <parameter name="userId" value="shamsmuhammad" 
+			/> <parameter name="password" value="dhaka123123" /> -->
+
+		<classes>
+			
+			<class name="com.crm.qa.testCases.LoginPageTest"></class>
+			<class name="com.crm.qa.testCases.HomePageTest"></class>
+			<class name="com.crm.qa.testCases.ContactPageTest"></class>
+			
+		</classes>
+	</test>
+</suite>

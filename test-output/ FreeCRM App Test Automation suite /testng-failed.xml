@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [ FreeCRM App Test Automation suite ]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="FreeCRM App TEST(failed)">
+    <parameter name="password" value="dhaka123123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="userId" value="shamsmuhammad"/>
+    <parameter name="url" value="https://www.freecrm.com/"/>
+    <classes>
+      <class name="com.crm.qa.testCases.HomePageTest">
+        <methods>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.testCases.HomePageTest -->
+      <class name="com.crm.qa.testCases.ContactPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="selectMultipleSingleContactByNameTest"/>
+          <include name="verifyContactLogoTest"/>
+          <include name="selectSingleContactByNameTest"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.crm.qa.testCases.ContactPageTest -->
+      <class name="com.crm.qa.testCases.LoginPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.qa.testCases.LoginPageTest -->
+    </classes>
+  </test> <!-- FreeCRM App TEST(failed) -->
+</suite> <!-- Failed suite [ FreeCRM App Test Automation suite ] -->
